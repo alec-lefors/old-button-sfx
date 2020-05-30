@@ -1,0 +1,16 @@
+ {
+    "name": "Button Click",
+    "version": "1.0",
+    "description": "Pressing a button. Button will go brr.",
+    "manifest_version": 2,
+    "web_accessible_resources": ["click.mp3"],
+    "icons": {
+      "128": "icon128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["click.js"]
+      }
+    ]
+  }
